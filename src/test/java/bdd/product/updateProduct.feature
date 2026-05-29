@@ -18,7 +18,7 @@ Feature: Actualizar produdctos
     And match response.id == id
     * print response
 
-
+  @automation-api
   Scenario Outline: CP02 - Actuzalizar producto forma 2
     * def payload = {"codigo": #(codigo), "nombre": #(nombre), "medida": #(medida), "marca": #(marca), "categoria": #(categoria), "precio": #(precio), "stock": #(stock), "estado": #(estado), "descripcion": #(descripcion)}
     * def id = 1062
